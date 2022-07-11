@@ -48,15 +48,19 @@
 # 暴力破解软件
     - Sample Proactive Password Auditor
 
+# Linux 密码重置
+    - 编辑 /etc/shadow 下的 passwd 文件, 删除第1个和第2个冒号之间的加密密码, 或从另一个用户项中复制过来
+
 # 破解密码的软件
 
-    - Cain & Abel                   [www.oxid.it/cain.html]   
+    - Cain & Abel                   [www.oxid.it/cain.html]   已失效
+        - 网络嗅探
         - LM和NTLM散列
         - Windows RDP (远程桌面协议)密码
         - 思科 IOS和PIX散列, VNC密码
         - RADIUS (远程认证拨号用户服务) 散列
 
-    - chknull                       [www.phreak.org/archives/exploits/novell]   
+    - chknull                       [www.phreak.org/archives/exploits/novell]   已失效
         - 可检查没有密码的Novell账户
 
     - Elcomsoft Distributed Password Recovery  [www.elcomsoft.com/edpr.html]
@@ -68,6 +72,9 @@
         - 破解或重置windows密码
         - 设置windows管理员权限
         - 通过引导光盘重置密码
+
+    - NTAccess [ www.mirider.com/ntaccess.html ]
+        - 重置 windows 密码
 
     - John the Ripper               [www.openwall.com/john]
         - 破解 Linux / UNIX / Windows 密码散列
@@ -93,5 +100,14 @@
         - 通过使用彩虹表很快的破解局域网管理程序(LM)散列和MD5散列
 
 
+# 其他破解方案
+    # 按键记录
+        - eBlaster / Spector Pro - by SpectorSoft   [ www.spectorssoft.com ]
+        - Invisible KeyLogger Stealth               [ www.amecisco.com/iks/htm ]
+        - KeyGhost                                  [ www.keyghost.com ]            硬件工具
 
 
+    # 明文密码存储, 如明文密码搜索工具
+        - Identity Finder Pro [www.Identityfinder.com/pro]
+
+    # 网络分析器
