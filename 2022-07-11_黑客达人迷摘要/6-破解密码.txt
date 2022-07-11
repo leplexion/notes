@@ -1,0 +1,97 @@
+# 彩虹破解 
+    - raibow cracking - by Philippe Oechslin 
+    - 费利佩-欧克林 彩虹破解 
+    - http://lasecwww.epfl.ch
+    - www.objecttifsecurite.ch/en/products.php
+
+# 弱口令
+
+# 技术漏洞
+    - 内存
+    - 文件 / 数据库
+    - 用户输入明文
+
+# 加强加密
+    - salt 散列加盐保证密码随机性
+
+# windows 密码存储位置
+    - SAM数据库 (安全账户管理程序) c:\winnt\system32\config
+    - Active Direcotry (ntds.dit)
+    - 有时存放在 c:\winnt\repair 目录或应急修复磁盘上的 SAM 文件备份中
+
+# linux / UNIX 变体 密码存储位置
+    - /etc/passwd               所有人可访问
+    - /etc/shadow               系统账户和根账户可以访问
+    - /etc/security/passwd      系统账户和根账户可以访问
+    - /.secure/passwd           系统账户和根账户可以访问
+
+# 破解密码
+
+    - 社会工学: 询问, 肩窥(偷看)
+    - 推理,猜
+    - windows 9X 系统 以下软件可轻易破解系统密码
+        - Proactive System Password Recovery - by Elcomsoft [www.elcomsoft.com/pspr.html]
+        - Cain & Abel [ www.oxid.it/cain.html ]
+
+# 密码字典
+    - ftp://ftp.cerias.purdue.edu/pub/dict
+    - ftp://ftp.ox.ac.uk/pub/wordlists
+    - http://packetstormsecurity.nl/Crackers/wordlists
+    - www.outpost9.com/files/WordLists.html
+    - http://rs159.rapidshare.com/files/184075601/BlackKnightList.rar   (书中说最全面)
+
+# 其他密码破解工具: 以下工具预定义的用户 ID 和 已知密码尝试登录
+
+    - Brutus        [www.hoobie.net/brutus]
+    - SQLPing3      [www.sqlsecurity.com/tools/freetools/tabid/65/Default.aspx]
+
+# 暴力破解软件
+    - Sample Proactive Password Auditor
+
+# 破解密码的软件
+
+    - Cain & Abel                   [www.oxid.it/cain.html]   
+        - LM和NTLM散列
+        - Windows RDP (远程桌面协议)密码
+        - 思科 IOS和PIX散列, VNC密码
+        - RADIUS (远程认证拨号用户服务) 散列
+
+    - chknull                       [www.phreak.org/archives/exploits/novell]   
+        - 可检查没有密码的Novell账户
+
+    - Elcomsoft Distributed Password Recovery  [www.elcomsoft.com/edpr.html]
+        - 通过使用10000太联网计算机, 分布式计算破解 Microsoft Office
+        - PGP(Pretty Good Privacy) 和 PKCS (The Public-Key Cryptography Standards)
+        - 同 Elcomsoft Wireless Auditor 工具一样, 可以用GPU视频加速, 提高50倍破解速度
+    
+    - Elcomsoft System Recovery     [www.elcomsoft.com/esr.html]
+        - 破解或重置windows密码
+        - 设置windows管理员权限
+        - 通过引导光盘重置密码
+
+    - John the Ripper               [www.openwall.com/john]
+        - 破解 Linux / UNIX / Windows 密码散列
+
+    - ophcrack                      [http://ophcrack.sourceforge.net]
+        - 通过引导光盘使用彩虹表破解windows用户密码
+
+    - Pandora                       [www.nmrc.org/project/pandora]
+        - 在线或离线破解 Novell NetWare 密码 ( 美国Novell公司;以开发网络产品著称 )
+
+    - Proactive Password Auditor    [www.elcomsoft.com/ppa.html]
+        - 提取 LM 和 NTLM 密码散列进行蛮力攻击, 字典攻击, 彩虹攻击
+
+    - Proactive System Password Recovery    [www.elcomsoft.com/pspr.html]
+        - 几乎能够恢复任何存储在本地的windows密码
+            - 如: 登录密码, WEP / WPA 密码
+            - 如: SYSKEY 密码, RAS拨号 / VPN 密码
+    
+    - pwdump3                       [www.openwall.com/passwords/dl/pwdump/pwdump3v2.zip]
+        - 能从SAM数据库中提取Windows密码散列
+    
+    - RanbowCrack                   [http://project-ranbowcrack.com]
+        - 通过使用彩虹表很快的破解局域网管理程序(LM)散列和MD5散列
+
+
+
+

@@ -1,0 +1,51 @@
+# 1. 安全计划定制软件 - 攻击树
+
+# 2. 收集公开的信息, 搜索引擎 + 爬虫
+    - whois
+    - 社交网络如 google 群组
+
+# 3. 通过公开的信息获取 ip 或服务器 扫描
+    - 获取基础信息: 系统, ip, 主机名
+    - 开放端口扫描:  SuperScan / Nmap
+    - 流量分析: OmniPeek  / WireShark
+
+# 4. 确定端口上运行的内容
+
+    - 协议: IP, IPX, NetBIOS
+    - 服务: Web, 数据库,  邮件等...
+    - 远程访问服务: windows 远程 / VNC / Secure Shell(SSH)
+    - VPN: PPTP / SSL / IPSec
+    - ping (ICMP回声)应答, 允许 ICMP流量出入主机
+
+    - 常用端口
+        - TCP port 21            FTP
+
+        - TCP port 23            telnet
+
+        - 电子邮件服务
+            - TCP port 25 / 465      SMTP / SMPTS
+            - TCP port 110 / 995     POP3 / POP3S
+            - TCP port 143 / 993     IMAP / IMAPS
+
+        - TCP / UDP port    53                  DNS 服务
+
+        - TCP port          80 / 443 / 8080     Web 服务 / web代理服务
+
+        - TCP / UDP port    135 / 137 / 138 / 139 / 445     未受保护的windows主机正在运行
+
+# 5. 其他查找工具
+
+    - NMapWin: 确定操作系统版本
+
+    - DumpSec: 枚举实用程序
+
+    - 通过直接访问对应端口的服务获取暴露的信息, 如软件, 具体版本等
+
+    - GFI LANguard: 共享工具查找
+
+
+
+
+
+
+

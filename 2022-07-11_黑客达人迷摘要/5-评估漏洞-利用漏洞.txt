@@ -1,0 +1,29 @@
+
+
+# 以下网站列出了已知(正式分类过的)漏洞
+
+    - Common Vulnerabilities and Exposures      [ http://cve.mitre.org/cve ]    常见漏洞披露                          
+    - US-CERT Vulnerability Notes DataBase      [ www.kb.cert.org/vuls ]        美国计算机应急响应小组的漏洞信息数据库
+    - NIST National Vulnerability DataBase      [ http://nvd.nist.gov ]         美国国家标准和技术协会的全国漏洞数据库    
+    - SANS Top 20                               [ www.sans.org/top20 ]          SAN机构编制更新的20大公认漏洞
+
+
+# 自动评估漏洞
+    - QualysGuard Suite 收费的漏洞扫描器
+    
+# 漏洞利用目标
+    - 更多主机信息
+    - 远程shell
+    - 进程
+    - 其他系统
+    - 修改安全措施
+    - 截图
+    - 文件
+    - 邮件
+    - SQL注入
+    - 拒绝服务攻击
+
+# 渗透
+    - Metasploit    [www.metasploit.com/framework]      利用已发现的漏洞 
+
+

@@ -1,0 +1,109 @@
+# 安全网站
+    - 2600-The Hacker Quaterly  [ wwww.2600.com ]
+    - (IN)SECURE Magazine       [ www.net-secuirity.org/insecuremag.php ]
+    - Hackin9                   [ http://hakin9.org ]
+    - PHRACK                    [ www.phrack.org/archives ]
+
+# 书籍
+    - Open Source Security Testing Methodology Manual   
+        [www.isecom.org/osstmm]     
+        开源安全测试方法手册
+
+    - Spies Among US: How to Stop the Spies, Terrorists, Hackers, and Criminals You Don't Even Know You Encounter Every Day 
+        社会工学相关
+        作者: Ira Winkler 艾拉-温克勒
+
+# 攻击树- 攻击计划管理工具
+    - SecurITree                [ wwww.amenaza.com ]
+
+# whiois 查询
+    - whois.net whois信息查询      [ www.whois.net ]  
+    - 作者最喜欢的whois工具收费     [ www.dnsstuff.com ]
+    - 域名注册网站略...
+    - ISP的技术支持网站
+
+# 端口扫描工具
+    - SuperScan
+    - Nmap          [ http://nmap.org ]
+
+# 流量分析工具
+    - OmniPeek      [ www.wildpackets.com ]
+    - WireShark     [ www.WireShark.com ]
+
+# 其他分析工具
+    - NMapWin       [ http://sourceforge.net/projects/nmapwin]
+    - DumpSec       [ www.systemtools.com/somarsoft/?somarsoft.com]
+
+    
+# 公开的漏洞
+    - Common Vulnerabilities and Exposures      [ http://cve.mitre.org/cve ]    常见漏洞披露                          
+    - US-CERT Vulnerability Notes DataBase      [ www.kb.cert.org/vuls ]        美国计算机应急响应小组的漏洞信息数据库
+    - NIST National Vulnerability DataBase      [ http://nvd.nist.gov ]         美国国家标准和技术协会的全国漏洞数据库    
+    - SANS Top 20                               [ www.sans.org/top20 ]          SAN机构编制更新的20大公认漏洞
+
+# 自动评估漏洞
+    - QualysGuard Suite                         [ www.qualys.com ]              Qualy收费的漏洞扫描器
+
+
+# 破解密码
+    # 美国国防部密码管理指南  [ www.itl.nist.gov/fipspubs/app-e.htm ]
+        
+
+    # 其他密码破解工具: 以下工具预定义的用户 ID 和 已知密码尝试登录
+        - Brutus        [www.hoobie.net/brutus]
+        - SQLPing3      [www.sqlsecurity.com/tools/freetools/tabid/65/Default.aspx]
+
+    # 蛮力破解工具
+        - Sample Proactive Password Auditor
+    
+        
+    # 密码字典
+        - ftp://ftp.cerias.purdue.edu/pub/dict
+        - ftp://ftp.ox.ac.uk/pub/wordlists
+        - http://packetstormsecurity.nl/Crackers/wordlists
+        - www.outpost9.com/files/WordLists.html
+        - http://rs159.rapidshare.com/files/184075601/BlackKnightList.rar   (书中说最全面)
+
+    # 常用工具
+        - Cain & Abel                   [www.oxid.it/cain.html]   
+            - LM和NTLM散列
+            - Windows RDP (远程桌面协议)密码
+            - 思科 IOS和PIX散列, VNC密码
+            - RADIUS (远程认证拨号用户服务) 散列
+
+        - chknull                       [www.phreak.org/archives/exploits/novell]   
+            - 可检查没有密码的Novell账户
+
+        - Elcomsoft Distributed Password Recovery  [www.elcomsoft.com/edpr.html]
+            - 通过使用10000太联网计算机, 分布式计算破解 Microsoft Office
+            - PGP(Pretty Good Privacy) 和 PKCS (The Public-Key Cryptography Standards)
+            - 同 Elcomsoft Wireless Auditor 工具一样, 可以用GPU视频加速, 提高50倍破解速度
+        
+        - Elcomsoft System Recovery     [www.elcomsoft.com/esr.html]
+            - 破解或重置windows密码
+            - 设置windows管理员权限
+            - 通过引导光盘重置密码
+
+        - John the Ripper               [www.openwall.com/john]
+            - 破解 Linux / UNIX / Windows 密码散列
+
+        - ophcrack                      [http://ophcrack.sourceforge.net]
+            - 通过引导光盘使用彩虹表破解windows用户密码
+
+        - Pandora                       [www.nmrc.org/project/pandora]
+            - 在线或离线破解 Novell NetWare 密码 ( 美国Novell公司;以开发网络产品著称 )
+
+        - Proactive Password Auditor    [www.elcomsoft.com/ppa.html]
+            - 提取 LM 和 NTLM 密码散列进行蛮力攻击, 字典攻击, 彩虹攻击
+
+        - Proactive System Password Recovery    [www.elcomsoft.com/pspr.html]
+            - 几乎能够恢复任何存储在本地的windows密码
+                - 如: 登录密码, WEP / WPA 密码
+                - 如: SYSKEY 密码, RAS拨号 / VPN 密码
+        
+        - pwdump3                       [www.openwall.com/passwords/dl/pwdump/pwdump3v2.zip]
+            - 能从SAM数据库中提取Windows密码散列
+        
+        - RanbowCrack                   [http://project-ranbowcrack.com]
+            - 通过使用彩虹表很快的破解局域网管理程序(LM)散列和MD5散列
+

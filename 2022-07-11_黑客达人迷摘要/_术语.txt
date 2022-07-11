@@ -1,0 +1,6 @@
+- ISP   Internet Service Provider                   因特网服务提供商
+- LM    LAN Manager                                 局域网管理系统
+- RDP   Remote Desktop Protocol                     远程桌面协议
+- PGP   Pretty Good Privacy                         优良保密协议
+- PKCS  The Public-Key Cryptography Standards       公钥密码学标准
+- SAM   
