@@ -3,4 +3,6 @@
 - RDP   Remote Desktop Protocol                     远程桌面协议
 - PGP   Pretty Good Privacy                         优良保密协议
 - PKCS  The Public-Key Cryptography Standards       公钥密码学标准
-- SAM   
+- SAM   The Security Accounts Manager               安全账户管理器(windows)
+- DDos  Distributed Dos                             分布式拒绝服务攻击
+- IKE   Internet Key Exchange                       因特网密钥交换协议

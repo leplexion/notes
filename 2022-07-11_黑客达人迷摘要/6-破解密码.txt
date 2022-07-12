@@ -5,6 +5,12 @@
     - www.objecttifsecurite.ch/en/products.php
 
 # 弱口令
+    - cracklib  linux自带, 弱口令过滤
+    - linux密码审计程序
+        
+        - npasswd
+        - passwd+
+
 
 # 技术漏洞
     - 内存
@@ -24,6 +30,18 @@
     - /etc/shadow               系统账户和根账户可以访问
     - /etc/security/passwd      系统账户和根账户可以访问
     - /.secure/passwd           系统账户和根账户可以访问
+
+# 硬盘加密工具
+    - windows:
+        - Windows BitLocker
+        - PGP Whole Disk Encryption     [ www.pgp.com/products/wholediskencryption ]
+    - linux:
+        - ThreCrypt                     [ www.truecrypt.org ]
+
+# 密码存储工具
+    - PGP 免费  [ www.pgpi.org ]
+    - PGP 商业  [ www.pgp.com ]
+    - Password Safe     [ http://passwordsafe.sourceforge.net ]
 
 # 破解密码
 
@@ -99,8 +117,25 @@
     - RanbowCrack                   [http://project-ranbowcrack.com]
         - 通过使用彩虹表很快的破解局域网管理程序(LM)散列和MD5散列
 
+# BIOS 密码
+    - 重置密码: 拔掉 CMOS 电池, 更换主板上的跳线
+    - 生产商官网可能有用于破解的工具
+    - 直接窃取硬盘得到数据
+
+# 安全防护软件
+    - Spybot        间谍防护
+    - Finjan        出品恶意代码行为防护软件
+    - Webroot       出品杀毒防护
+    - McAfee        出品杀毒防护
+
+
+# 自动化密码重置程序开发
+
 
 # 其他破解方案
+    # 内存与硬盘中搜索 password / pass= / login 等内容
+        - winhex    [ www.winhex.com/winhex/index-m.html ]
+
     # 按键记录
         - eBlaster / Spector Pro - by SpectorSoft   [ www.spectorssoft.com ]
         - Invisible KeyLogger Stealth               [ www.amecisco.com/iks/htm ]
@@ -111,3 +146,15 @@
         - Identity Finder Pro [www.Identityfinder.com/pro]
 
     # 网络分析器
+        # 攻击工具
+            - Cain & Abel
+            - wireshark
+            - OmniPeek
+
+        # 防御
+            - 使用交换机, 不使用集线器, 网络在"混杂模式"中表示运行着网络分析器
+            - 如何知道在混杂模式下?
+                - windows:  PromiseDetect   [ http://ntsecurity.nu/toolbox/promisedetect ]
+                - unix:     sniffdet        [ http://sniffdet.sourceforge.net ]
+
+
