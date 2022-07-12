@@ -6,3 +6,6 @@
 - SAM   The Security Accounts Manager               安全账户管理器(windows)
 - DDos  Distributed Dos                             分布式拒绝服务攻击
 - IKE   Internet Key Exchange                       因特网密钥交换协议
+- NetBIOS   Network Basic Input/Output System       网络基本输入输出系统, 它提供了OSI模型中的会话层服务
+- DHA   direcotry harvest attack                    目录收集攻击
+- VoIP  Voice over IP                               IP 电话

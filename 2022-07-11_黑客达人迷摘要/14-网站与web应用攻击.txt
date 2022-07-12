@@ -1,0 +1,19 @@
+# 测试工具
+    - Acunetix Web Vulnerability Scanner    [ www.acunetix.com ]                                端口扫描, http嗅探, 自动SQL注入
+    - FireFox Web Developer                 [ http://chrispederick.com/work/web-develeper ]     调试工具
+    - HTTrack Website Copier                [ www.httrack.com ]                                 为网站制作离线镜像, 用于离线检查
+    - N-Stalker Web Application Security Scanner   [ www.nstalker.com/eng/products/nstealth ]   密码破解, web服务器负载测试工具
+    - Webinspect                            [ www.spidynamics.com/products/webinspect/index.html] http代理, http编辑器, 自动sql注入
+
+# 爬虫工具
+    - HTTrack Website Copier
+    - Goodle:
+        - site: 主机名 关键词 比如 SSN(社会保障号码), credit card 信用卡等
+        - filetype: 文件类型
+        - allintitle: 标题中的关键词
+        - inurl: url 中的关键词
+        - related:  找相似的网页
+        - link: 该网站连接的其他网站
+        - 更多操作符: www.google.com/installed/en/help/operators.html
+        - Johnny Long 约翰尼-朗 的 Google Hacking Database GHDB, Goodle黑客攻击数据库 [ http://johnny.ihackstuff.com/ghdb ]
+        - http://artkast.yak.net/81

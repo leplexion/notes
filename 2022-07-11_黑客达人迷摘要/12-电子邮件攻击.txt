@@ -1,0 +1,21 @@
+
+# 超载攻击
+    - 携带大文件附件
+    - 发送大量邮件
+
+# 电子邮件防火墙:
+    - CipherTrust IronMail
+    - M+Guardian - by Messaging Architech
+
+# SMTP 攻击
+    - VRFY 命令账户枚举     telnet连接服务器, 执行该命令, 账户枚举, verify的缩写 DHA direcotry harvest attack
+    - EXPN 命令             Tamosoft Essential NetTools 中的 Email Verify程序可自动化完成这个过程
+
+
+# 获取邮件程序的版本
+    - smtpscan [ www.freshports.org/security/smtpscan ]   linux邮件扫描工具
+    - 电子邮件 Header 信息暴露程序版本
+
+# 流量捕获
+    - dsniff        [ www.monkey.org/~dugsong/dsniff ]
+    - NetResident   [ www.tamos.com/products/netresident ]
