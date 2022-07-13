@@ -23,6 +23,9 @@
     - Network Security Bible, Second Edition
         作者: 埃里克`科尔
 
+    - Google Hacking for Penetration Testers ( Syngress出版 )
+    
+
 # 人物
     - 劳拉-查佩尔 Protocol Analysis Institute 高级协议分析师 (wwww.packet-level.com)
 

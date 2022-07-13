@@ -15,5 +15,23 @@
         - related:  找相似的网页
         - link: 该网站连接的其他网站
         - 更多操作符: www.google.com/installed/en/help/operators.html
-        - Johnny Long 约翰尼-朗 的 Google Hacking Database GHDB, Goodle黑客攻击数据库 [ http://johnny.ihackstuff.com/ghdb ]
+        - Johnny Long 约翰尼-朗 的 Google Hacking Database GHDB, Goodle黑客攻击数据库 [ http://johnny.ihackstuff.com/ghdb ], 著有 Google Hacking for Penetration Testers
         - http://artkast.yak.net/81
+
+# 攻击
+    - 在未做检验的表单中提交大量数据
+    - URL 篡改, 利用服务器url解析漏洞
+    - 修改请求字段
+    - 代码注入, SQL注入
+    - XSS跨站脚本, 如伪造登录页
+    - Web 攻击工具:
+        - OWASP WebGoat Project [ www.owasp.org/index.php/Category:OWASP_WebGoat_Project ]
+        - Hacme Tools           [ www.foundstone.com/us/resources-free-tools.asp ]
+
+# 服务器安全
+    - 用不同的机器运行 Web服务器, 应用服务器, 数据库服务器
+    - 应用程序环境隔离
+    - ServerMask - by Port 80 Software  [ www.port80software.com/produts/servermask ]   服务器匿名
+    - IP Personality                    [ http://ippersonality.sourceforge.net ]        改变系统指纹
+    - 防火墙防御
+        - Juniper Networks  

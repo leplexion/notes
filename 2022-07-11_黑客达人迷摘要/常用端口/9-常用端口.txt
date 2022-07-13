@@ -13,3 +13,4 @@
     - TCP port          80 / 443 / 8080     Web 服务 / web代理服务
 
     - TCP / UDP port    135 / 137 / 138 / 139 / 445     未受保护的windows主机正在运行
+
