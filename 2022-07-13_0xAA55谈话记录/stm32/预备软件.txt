@@ -1,0 +1,8 @@
+stm32cube ide
+https://www.st.com/en/development-tools/stm32cubeide.html#overview
+
+stm32cube mx
+https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html
+
+
+画板软件：  Altium Designer
