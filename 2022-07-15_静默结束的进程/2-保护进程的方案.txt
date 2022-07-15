@@ -1,10 +1,16 @@
 # 进程隐藏
 
-    - 大漠插件中的 dmguard 函数, 保护进程
-        模式:
-            phide 仅支持32位应用程序
+    - 大漠插件中的 DmGuard(enable,type) 函数, 保护进程
+        - enable 参数: 1 启用 0 关闭
+        - type 参数 
+            - phide / phide2 / phide3 : 仅支持32位应用程序
+            - block / b2 : 保护指定进程不被非法访问, 未知是否可用
 
-    - hidetoolz 已失效
+            dm.DmGuard(1, 'block')
+            
+    - 现成软件:
+
+        - hidetoolz 已失效
 
     - 内核级进程断链, 要编译驱动程序      
 
@@ -12,6 +18,15 @@
 # 目标内存操作干预:
 
     - 易语言精易库中, "进程_暂停" 将杀灭进程的进程暂停
+
+        进程_暂停(进程ID: int, 状态: bool)->void {
+            phandle:ptr = OpenProcess(2035711, 0, 进程ID)
+            if 状态
+                ZwSuspendProcess(phandle)
+            else
+                ZwResumeProcess
+            CloseHandle(phandle)
+        }
 
     - 内核级进程断链, 要编译驱动程序
 
