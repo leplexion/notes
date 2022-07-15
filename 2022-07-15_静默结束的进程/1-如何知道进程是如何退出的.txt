@@ -1,0 +1,18 @@
+# gflags.exe : 来自 windbg 工具包
+    - 下载安装程序: https://developer.microsoft.com/zh-tw/windows/downloads/windows-sdk/
+    - gflags 概述: https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/gflags-overview
+    - 仅选择 Debugging Tools For Windows
+    - 参考安装目录 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\gflags.exe
+    - 配置 gflags.exe 监听:
+        - 管理员模式启动 gflags.exe, 该工具监听将写入注册表
+        - 选择 Slient Process Exit 在顶部Tab最右侧
+        - Image: (TAB to refresh) 输入进程名称如: notepad.exe, 按下tab键
+        - 勾选 Enable Slient Process Exit Monitoring
+        - 其他选项: 
+            - Enable dump collection:  将输出退出相关的信息, 未知内容类型
+            - Enable notification: 将在进程被退出的时候发出提示
+
+# eventvwr.exe : 事件查看器
+    - windows 日志: 展开
+        - 应用程序: 双击
+            - 来源为: Process Exit Monitor
