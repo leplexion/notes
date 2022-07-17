@@ -1,6 +1,6 @@
 # gflags.exe : 来自 windbg 工具包
-    - 下载安装程序: https://developer.microsoft.com/zh-tw/windows/downloads/windows-sdk/
-    - gflags 概述: https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/gflags-overview
+    - 下载安装程序: winsdksetup.exe [ https://developer.microsoft.com/zh-tw/windows/downloads/windows-sdk/ ]
+    - gflags 概述 [ https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/gflags-overview ] 
     - 仅选择 Debugging Tools For Windows
     - 参考安装目录 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\gflags.exe
     - 配置 gflags.exe 监听:
