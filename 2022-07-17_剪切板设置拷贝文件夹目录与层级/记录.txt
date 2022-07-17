@@ -1,0 +1,53 @@
+# 需求说明
+
+    这是一个很奇怪的需求
+    
+    要求在 Explorer资源管理器 与 TotalCommand 中
+
+    通过 "f1" 和 "f3" 2个热键, 复制选中的文件夹目录结构到剪切板, 而不包括里面的 文件
+    
+    就是设置另一种类似 "ctrl+c" 的复制功能
+    
+    而其 "f3" 还要能够输入递归目录层级
+
+
+# 思路
+
+    - 资源管理器, 其实应该是包括桌面的, AHK 有个第三方库 explorer_select(), 能够获取资源管理器与桌面的选中的文件列表, 大概实现逻辑如此:
+
+        - 在 desktop 桌面 窗口: 
+            ControlGet, hwWindow, HWND,, SysListView321, ahk_class Progman
+            ControlGet, selectItems, List, % "Selected" "Col1",,ahk_id %hwWindow%
+            msgbox % selectItems
+
+
+        - 在 explorer.exe 资源管理器 窗口, 可用 Com 组件 Shell.Application: 
+            selectItems := ""
+            for item in ComObjCreate("Shell.Application").Windows.SelectedItems 
+                selectItems .= item.path
+            msgbox % selectItems
+
+    - TotalCommand, 这个我比较无解, 因此, 挑了个比较沙雕的方案, 通过发送 Ctrl + C 复制获取复制的列表, 这个没什么技术含量, 不赘述
+
+    - 将目录结构放到剪切板
+
+        那一定不是单纯的只是复制选中的部分了, 所以, 我选择创建一个临时的空文件夹结构, 把这临时目录的最顶层目录列表写入剪切板
+
+        然后, 这个鬼问题就直接困扰到我了, windows 的 api 似乎并没有直接提及设置剪切板数据类型为复制的文件夹的方案, clipboard 有关的接口又非常原始与难懂, 总之坑爹
+
+        最后, 群友 "某10" 推荐了一款软件叫 insideclipboard, 可以查看剪切板的二进制数据
+
+        见 [ 图:剪切板数据 ]
+
+        开头部分的二进制数据, 这似乎是一个定值
+
+        data := [0x14, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00]
+
+        接着, 后面跟着的路径列表是 utf-16的编码, 就 2字节 一个字符单元的编码形式, 路径以 2字节 0x00 隔断, 在末尾则有 4个 0x00 字节
+
+        好了... 完事, 最终代码参考了 lexikos 的设置剪切板源码见 "最终版本.ahk" 中的 SetClipBoardPathMany() 函数
+
+
+
+
+    
