@@ -1,0 +1,23 @@
+# 日志查看工具
+
+    - eventvwr.msc / 事件查看器: windows系统自带
+
+# 删除 windows 日志
+    - 直接在 eventvwr.msc UI界面中删除
+
+    - cmd 命令行:
+        for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1"
+
+    - powershell 命令:
+        Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }
+
+# 关闭系统日志
+
+    停止Windows Event Log（EventLog） 服务
+
+    删除 对应的 文件 
+        - %SystemRoot%\System32\Winevt\Logs\
+    删除对应名字的注册表文件
+        - KEY_LOCAL_MACHINE\system\CurrentControlSet\Services\Eventlog\ 
+
+    重启Windows Event Log（EventLog） 服务
