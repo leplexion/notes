@@ -1,0 +1,19 @@
+# 给的链接
+    - vue3-element-admin [ http://cloud.objset.com/notes/yutao-vue3-element-admin-master.zip ]
+
+    - vue3 第三方文档 [ https://vue3.chengpeiquan.com/ ]
+
+    - vue3 搭架子教程 [ https://www.jianshu.com/p/063188d494ed ]
+
+    - vue2-3 表单模板生成 [ https://vform666.com/ ]
+
+# 关键
+    - <script setup> 在顶级声明
+
+    - 模板数据
+
+        - ts interface // 定义数据原型
+
+        - const state = reactive({  })  // 定义原型内容
+
+        - toRefs(state) // 让数据绑定
