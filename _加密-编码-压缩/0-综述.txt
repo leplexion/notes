@@ -1,0 +1,65 @@
+# 原文: https://blog.m157q.tw/posts/2017/12/23/differences-between-encryption-compression-and-encoding/
+
+# -------------------------------------
+# Encryption 加密
+
+    特征: 
+        - 有密钥
+        - 可逆
+
+    类型:
+        - Symmetric Encryption 對稱式加密
+        - Asymmetric Encryption 非對稱式加密
+
+    常見算法:
+        - 對稱式：DES, 3DES, AES
+        - 非對稱式：RSA, DSA, ECC
+
+    
+    注: base64 无密钥, 故 base64 非加密
+
+# -------------------------------------
+# Compression 压缩
+
+    特征:
+        - 输出比输入小
+
+    类型: 
+        - 无损压缩
+        - 有损压缩
+
+    常见算法:
+        - zip, gzip, rar, 7zip, jpg, mp3, mp4, Huffman coding
+
+# -------------------------------------
+# Encoding 编码
+
+    特征:
+        - 广义上来说 "压缩" 与 "加密" 都算是編碼的其中一種
+
+        - 将原文转换为另一种表达方式
+
+        - 无需密钥
+
+        - 不同编码算法有不同特征: 
+
+            - Error Detection 錯誤偵測
+
+            - Error Correction 錯誤校正
+
+            - 为了特定场景的资料便利传输
+
+            - 以 不同的形式 表示 相同的資料, 如 base64 把 二进制数据 用 ascii 表示
+            
+    类型:
+
+        - Character Encoding 字元編碼
+
+        - Audio Encoding 音訊編碼
+
+        - Video Encoding 視訊編碼
+
+        - ...
+
+    常见算法:
+        - base64, urlencode, hamming code
