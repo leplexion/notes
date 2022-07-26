@@ -8,11 +8,15 @@
         - 可逆
 
     类型:
+
         - Symmetric Encryption 對稱式加密
+
         - Asymmetric Encryption 非對稱式加密
 
-    常見算法:
+    常见算法:
+
         - 對稱式：DES, 3DES, AES
+
         - 非對稱式：RSA, DSA, ECC
 
     
