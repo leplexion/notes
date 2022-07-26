@@ -1,0 +1,29 @@
+# 两个对象
+    - Blob          [ https://developer.mozilla.org/zh-CN/docs/Web/API/Blob ]
+        # 生成二进制
+
+        new Blob([array], { type: "application/octet-binary" });
+
+    - Uint8Array    [ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array ]
+        new Uint8Array(length); 
+        new Uint8Array(object);
+
+    - ArrayBuffer   [ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer ] 
+
+    
+    - 对象互转:
+        // 字节数组生成 blob
+
+        function create_blob_bytes_array(arr) {
+            return new Blob( [new Uint8Array(arr)], { type: "application/octet-binary" })
+        }
+
+        async function blob_read_bytes_array(blob) {
+            return Array.from(new Uint8Array(await blob.arrayBuffer()));
+        }
+        
+
+
+
+    
+
